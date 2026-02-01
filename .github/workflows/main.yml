@@ -24,11 +24,12 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
+        repository: 'https://github.com/tomcl7/XenonRecomp.git'
         submodules: recursive
 
     - name: Install Ninja (Linux)
       if: runner.os == 'Linux'
-      run: sudo apt-get update && sudo apt-get install -y ninja-build
+      run: sudo apt-get update && sudo apt-get install -y ninja-build && ls
       shell: bash
 
     - name: Install Ninja (Windows)
