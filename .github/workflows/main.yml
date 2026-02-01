@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        repository: 'https://github.com/tomcl7/XenonRecomp.git'
+        repository: 'tomcl7/XenonRecomp'
         submodules: recursive
 
     - name: Install Ninja (Linux)
